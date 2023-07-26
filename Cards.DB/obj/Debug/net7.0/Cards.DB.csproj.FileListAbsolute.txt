@@ -1,0 +1,14 @@
+C:\Users\Andy\source\repos\CardAPI\Cards.DB\bin\Debug\net7.0\Cards.DB.deps.json
+C:\Users\Andy\source\repos\CardAPI\Cards.DB\bin\Debug\net7.0\Cards.DB.runtimeconfig.json
+C:\Users\Andy\source\repos\CardAPI\Cards.DB\bin\Debug\net7.0\Cards.DB.dll
+C:\Users\Andy\source\repos\CardAPI\Cards.DB\bin\Debug\net7.0\Cards.DB.pdb
+C:\Users\Andy\source\repos\CardAPI\Cards.DB\obj\Debug\net7.0\Cards.DB.csproj.AssemblyReference.cache
+C:\Users\Andy\source\repos\CardAPI\Cards.DB\obj\Debug\net7.0\Cards.DB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andy\source\repos\CardAPI\Cards.DB\obj\Debug\net7.0\Cards.DB.AssemblyInfoInputs.cache
+C:\Users\Andy\source\repos\CardAPI\Cards.DB\obj\Debug\net7.0\Cards.DB.AssemblyInfo.cs
+C:\Users\Andy\source\repos\CardAPI\Cards.DB\obj\Debug\net7.0\Cards.DB.csproj.CoreCompileInputs.cache
+C:\Users\Andy\source\repos\CardAPI\Cards.DB\obj\Debug\net7.0\Cards.DB.dll
+C:\Users\Andy\source\repos\CardAPI\Cards.DB\obj\Debug\net7.0\refint\Cards.DB.dll
+C:\Users\Andy\source\repos\CardAPI\Cards.DB\obj\Debug\net7.0\Cards.DB.pdb
+C:\Users\Andy\source\repos\CardAPI\Cards.DB\obj\Debug\net7.0\Cards.DB.genruntimeconfig.cache
+C:\Users\Andy\source\repos\CardAPI\Cards.DB\obj\Debug\net7.0\ref\Cards.DB.dll

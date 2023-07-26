@@ -1,0 +1,15 @@
+C:\Users\Andy\source\repos\CardAPI\Cards.Core\bin\Debug\net7.0\Cards.Core.deps.json
+C:\Users\Andy\source\repos\CardAPI\Cards.Core\bin\Debug\net7.0\Cards.Core.dll
+C:\Users\Andy\source\repos\CardAPI\Cards.Core\bin\Debug\net7.0\Cards.Core.pdb
+C:\Users\Andy\source\repos\CardAPI\Cards.Core\bin\Debug\net7.0\Cards.DB.dll
+C:\Users\Andy\source\repos\CardAPI\Cards.Core\bin\Debug\net7.0\Cards.DB.pdb
+C:\Users\Andy\source\repos\CardAPI\Cards.Core\obj\Debug\net7.0\Cards.Core.csproj.AssemblyReference.cache
+C:\Users\Andy\source\repos\CardAPI\Cards.Core\obj\Debug\net7.0\Cards.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andy\source\repos\CardAPI\Cards.Core\obj\Debug\net7.0\Cards.Core.AssemblyInfoInputs.cache
+C:\Users\Andy\source\repos\CardAPI\Cards.Core\obj\Debug\net7.0\Cards.Core.AssemblyInfo.cs
+C:\Users\Andy\source\repos\CardAPI\Cards.Core\obj\Debug\net7.0\Cards.Core.csproj.CoreCompileInputs.cache
+C:\Users\Andy\source\repos\CardAPI\Cards.Core\obj\Debug\net7.0\Cards.Core.csproj.CopyComplete
+C:\Users\Andy\source\repos\CardAPI\Cards.Core\obj\Debug\net7.0\Cards.Core.dll
+C:\Users\Andy\source\repos\CardAPI\Cards.Core\obj\Debug\net7.0\refint\Cards.Core.dll
+C:\Users\Andy\source\repos\CardAPI\Cards.Core\obj\Debug\net7.0\Cards.Core.pdb
+C:\Users\Andy\source\repos\CardAPI\Cards.Core\obj\Debug\net7.0\ref\Cards.Core.dll

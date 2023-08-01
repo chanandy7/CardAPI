@@ -14,5 +14,9 @@ namespace Cards.DB
         public int IdSecond { get; set; }
         public string Front { get; set; }
         public string Back { get; set; }
+
+
+        [ForeignKey("UserId")]
+        public User User { get; set; }
     }
 }

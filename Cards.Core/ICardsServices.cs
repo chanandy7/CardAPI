@@ -1,6 +1,6 @@
-﻿using Cards.DB;
-using System;
+﻿using Cards.Core.DTO;
 using System.Collections.Generic;
+
 
 
 namespace Cards.Core
@@ -12,7 +12,7 @@ namespace Cards.Core
         //gets a certain deck
         List<Card> GetCard(int id);
         //create a deck
-        Card CreateCard(Card card);
+        Card CreateCard(DB.Card card);
         //delete a deck
         void DeleteCard(int id);
         //get a deck and edit a certain id, id2

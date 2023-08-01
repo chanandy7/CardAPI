@@ -78,3 +78,5 @@ C:\Users\Andy\source\repos\CardAPI\CardAPI\obj\Debug\net7.0\CardAPI.genruntimeco
 C:\Users\Andy\source\repos\CardAPI\CardAPI\obj\Debug\net7.0\ref\CardAPI.dll
 C:\Users\Andy\source\repos\CardAPI\CardAPI\bin\Debug\net7.0\Cards.Core.dll
 C:\Users\Andy\source\repos\CardAPI\CardAPI\bin\Debug\net7.0\Cards.Core.pdb
+C:\Users\Andy\source\repos\CardAPI\CardAPI\bin\Debug\net7.0\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Andy\source\repos\CardAPI\CardAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

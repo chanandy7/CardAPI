@@ -1,16 +1,15 @@
 using Cards.Core;
 using Cards.DB;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace testingDB.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class CardsController : ControllerBase
     {
-
-
-
         private ICardsServices _cardsServices;
         public CardsController(ICardsServices cardsServices)
         {
@@ -44,11 +43,11 @@ namespace testingDB.Controllers
             _cardsServices.DeleteCard(id); return Ok();
         }
 
-        [HttpPut]
-        public IActionResult PutCard(Card card)
-        {
-            return Ok(_cardsServices.EditCard(card));
-        }
+        //[HttpPut]
+        //public IActionResult PutCard(Card card)
+       // {
+           // return Ok(_cardsServices.EditCard(card));
+       // }
 
 
     }

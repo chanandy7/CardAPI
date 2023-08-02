@@ -57,11 +57,9 @@
 
 
 
-
-
-
 using Cards.Core;
-using Cards.DB;
+using Cards.Core.DTO;
+
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -93,7 +91,7 @@ namespace CardAPI.Controllers
 
         }
         [HttpPost]
-        public IActionResult CreateCard(Card card)
+        public IActionResult CreateCard(Cards.DB.Card card)
         {
             var newCard = _cardsServices.CreateCard(card);
             return CreatedAtRoute("GetCard", new { newCard.Id, newCard.IdSecond }, newCard);

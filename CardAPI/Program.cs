@@ -18,6 +18,15 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
+
+//conficting name of Card- soln
+builder.Services.AddSwaggerGen(Options =>
+{
+    Options.CustomSchemaIds(x => x.FullName);
+});
+
+
+
 builder.Services.AddDbContext<AppDbContext>();
 builder.Services.AddTransient<ICardsServices, CardsServices>();
 builder.Services.AddTransient<IUserService, UserService>();
@@ -26,7 +35,7 @@ builder.Services.AddTransient<IPasswordHasher, PasswordHasher>();
 
 
 //post-postman run 1
-//builder.Services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
 
 
 

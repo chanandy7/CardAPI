@@ -21,9 +21,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>();
 builder.Services.AddTransient<ICardsServices, CardsServices>();
 builder.Services.AddTransient<IUserService, UserService>();
+
 builder.Services.AddTransient<IPasswordHasher, PasswordHasher>();
 
-builder.Services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
+
+//post-postman run 1
+//builder.Services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
 
 
 
@@ -58,6 +61,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+
+//authentication should be above authrorization, since its a pipeline, order here matters!
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseCors(policy =>
@@ -69,7 +75,7 @@ app.UseCors(policy =>
 }
     );
 
-app.UseAuthentication();
+
 
 
 app.MapControllers();

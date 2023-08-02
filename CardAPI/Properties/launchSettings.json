@@ -18,7 +18,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "JWT_SECRET": "This is the secret",
-        "JWT_ISSURER": "My cards"
+        "JWT_ISSUER": "My cards"
       }
     },
     "https": {
@@ -30,7 +30,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "JWT_SECRET": "This is the secret",
-        "JWT_ISSURER": "My cards"
+        "JWT_ISSUER": "My cards"
       }
     },
     "IIS Express": {
@@ -40,7 +40,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "JWT_SECRET": "This is the secret",
-        "JWT_ISSURER": "My cards"
+        "JWT_ISSUER": "My cards"
       }
     }
   }

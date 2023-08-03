@@ -36,6 +36,9 @@ builder.Services.AddSwaggerGen(Options =>
 });
 
 
+builder.Services.AddHttpClient();
+
+
 
 builder.Services.AddDbContext<AppDbContext>();
 builder.Services.AddTransient<ICardsServices, CardsServices>();

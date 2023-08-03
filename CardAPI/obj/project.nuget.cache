@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EfWjSUGymzPBMck1OZTFefLmwwEFIIcoI9eHvqle9k/Sn74iha10+cpI9CRGSvA7eWjEhptMy6b39ni4LB1RdQ==",
+  "dgSpecHash": "dUoYWtaL/Zm1irhAth3vFhvqhgJnhL+HqVVG2aA4j8RpVRpKcwHfeCYXaAim6F3eiMxuzzAyi7BXXpQyO/JaNg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Andy\\source\\repos\\CardAPI\\CardAPI\\CardAPI.csproj",
   "expectedPackageFiles": [
@@ -34,6 +34,7 @@
     "C:\\Users\\Andy\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Andy\\.nuget\\packages\\microsoft.extensions.dependencymodel\\7.0.0\\microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512",
     "C:\\Users\\Andy\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\2.2.0\\microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Andy\\.nuget\\packages\\microsoft.extensions.http\\7.0.0\\microsoft.extensions.http.7.0.0.nupkg.sha512",
     "C:\\Users\\Andy\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "C:\\Users\\Andy\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Andy\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",

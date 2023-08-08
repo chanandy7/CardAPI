@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/cards2dbserver/databases/CardsDB",
+      "type": "mssql.azure",
+      "connectionId": "DB_CONNECTION_STRING",
+      "dynamicId": null
+    }
+  }
+}

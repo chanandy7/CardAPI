@@ -2,6 +2,7 @@
 using Cards.Core.customExceptions;
 using Cards.Core.CustomExceptions;
 using Cards.DB;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CardAPI.Controllers
@@ -18,6 +19,7 @@ namespace CardAPI.Controllers
 
         //endpoints
         [HttpPost("signup")]
+        [AllowAnonymous]
         public async Task<IActionResult> SignUp(User user)
         {
             try {

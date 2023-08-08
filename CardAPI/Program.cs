@@ -7,26 +7,28 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
+
+using Microsoft.Extensions.Configuration;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DB_CONNECTION_STRING")));
+
+
+
+
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//builder.Services.AddCors(options =>
-//{
-//    options.AddPolicy("AllowOriginsPolicy",
-//        builder =>
-//        {
-//            builder.WithOrigins("http://localhost:3000")
-//                   .AllowAnyHeader()
-//                   .AllowAnyMethod();
-//        });
-//});
+
 
 
 //conficting name of Card- soln
@@ -76,31 +78,53 @@ builder.Services.AddAuthentication(opts =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+
+
+//for deployment
+//get the appDbContext instance using DI
+using (var scope = app.Services.CreateScope())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    var services = scope.ServiceProvider;
+    var dbContext = services.GetRequiredService<AppDbContext>();
+
+    dbContext.Database.Migrate();
 }
+
+
+
+
+
+
+// Configure the HTTP request pipeline.
+
+
+app.UseSwagger();
+app.UseSwaggerUI();
+
 
 app.UseHttpsRedirection();
 
 
-//authentication should be above authrorization, since its a pipeline, order here matters!
+
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.UseCors(policy =>
-{
-    policy.WithOrigins("http://localhost:3000")
-    .AllowCredentials()
-    .AllowAnyHeader()
-    .AllowAnyMethod();
-}
-    );
+//app.UseCors(policy =>
+//{
 
+//    policy.WithOrigins("http://localhost:3000")
+//    .AllowCredentials()
+//    .AllowAnyHeader()
+//    .AllowAnyMethod();
+//}
+//    );
 
-
+app.UseCors(policy => {
+    policy.SetIsOriginAllowed(_ => true)
+        .AllowCredentials()
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+});
 
 
 
